@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import '../styles/components/navigations.scss';
-// import Link from '../../elements/link/Link';
+import '../styles/elements/link.scss';
 const Instagram = require('../assets/images/instagram.png');
 // import Burger from './Burger';
 
@@ -34,11 +34,21 @@ const Navigation = () => {
         <div className="nav_block">
           {/* Nav */}
           <div className="navigation">
-            {/* <Link text="Home" href="#sec-1" />
-            <Link text="Aboute Us" href="#sec-2" />
-            <Link text="Our Menu" href="#sec-3" />
-            <Link text="Pages" href="#sec-4" />
-            <Link text="Blog" href="#sec-5" /> */}
+            <a href="#sec-1" className="link">
+              Home
+            </a>
+            <a href="#sec-2" className="link">
+              Aboute Us
+            </a>
+            <a href="#sec-3" className="link">
+              Our Menu
+            </a>
+            <a href="#sec-4" className="link">
+              Pages
+            </a>
+            <a href="#sec-5" className="link">
+              Blog
+            </a>
           </div>
           {/* Icons */}
           <div className="icons">
@@ -46,11 +56,9 @@ const Navigation = () => {
               <img src={Instagram} alt="intagramm" />
             </div>
             <div className="numbers">
-              {/* <Link
-                text="+380984956069"
-                href="tel:+380984956069"
-                type={LinkTypes.WHITE}
-              /> */}
+              <a href="tel:+380984956069" className="link">
+                +380984956069
+              </a>
             </div>
           </div>
           {/* Burger */}
