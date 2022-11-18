@@ -1,0 +1,32 @@
+@import '../variables';
+
+.header {
+  background-color: $c-default;
+  &__button {
+    width: fit-content;
+    @media screen and (max-width: $desktop) {
+      max-width: 195px;
+    }
+  }
+  &__logo {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  &__line {
+    color: $c-space;
+  }
+}
+
+.container {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+  }
+}
