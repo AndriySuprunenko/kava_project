@@ -1,0 +1,143 @@
+@import '../variables';
+// Fixed and burger
+.is-sticky {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vidstup {
+  margin-top: 89px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hamb {
+  display: flex;
+  align-items: center;
+}
+
+.hamb__field {
+  z-index: 999;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  display: block;
+  margin: 5px auto;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup {
+  top: 0px;
+  width: 100%;
+  right: -100%;
+  z-index: 998;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(41, 46, 54, 1);
+}
+
+.popup.open {
+  right: 0;
+}
+
+.hamb__field.open span:first-of-type {
+  transform: rotate(45deg) translate(10px, 4px);
+}
+
+.hamb__field.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamb__field.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -1px);
+}
+
+// Navigation style
+.nav_container {
+  position: sticky;
+  background-color: $c-default;
+}
+
+.nav_block {
+  margin: auto;
+  display: flex;
+  position: static;
+  max-width: 1440px;
+  padding: 25px 40px;
+  align-items: center;
+  background-color: $c-default;
+  justify-content: space-between;
+  @media screen and (max-width: $desktop) {
+    padding: 20px;
+  }
+}
+
+.link {
+  margin-right: 60px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: $desktop) {
+    justify-content: flex-start;
+  }
+}
+
+.numbers {
+  display: flex;
+  width: fit-content;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navigation {
+  display: flex;
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.burger {
+  display: none;
+  width: fit-content;
+  @media screen and (max-width: $desktop) {
+    display: block;
+  }
+}
