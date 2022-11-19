@@ -1,0 +1,128 @@
+@import '../variables';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: $c-home-bc;
+  padding: 100px 40px 60px 40px;
+  @media screen and (max-width: $desktop) {
+    padding: 40px;
+  }
+  @media screen and (max-width: $phone) {
+    padding: 20px;
+  }
+  &__block {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 85px 40px 125px 40px;
+    justify-content: space-between;
+    @media screen and (max-width: $desktop) {
+      display: flex;
+      margin: 0 auto;
+      padding-top: 40px;
+      padding-bottom: 0;
+      flex-direction: column;
+      max-width: fit-content;
+    }
+    @media screen and (max-width: $phone) {
+      padding: 20px 0 20px 0;
+    }
+  }
+  &__image {
+    max-width: 745px;
+    margin-right: 20px;
+    @media screen and (max-width: $desktop) {
+      margin: 0;
+      margin-right: 0;
+    }
+  }
+  &__texts {
+    display: flex;
+    max-width: 570px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @media screen and (max-width: $desktop) {
+      margin-top: 40px;
+    }
+    &_blocks {
+      display: flex;
+    }
+    &_block {
+      display: flex;
+      margin-right: 15px;
+      flex-direction: column;
+    }
+    &_title {
+      color: $c-default;
+      font-size: $fs-home-title;
+    }
+    &_text {
+      margin-top: 15px;
+      color: $c-default;
+      font-size: $fs-text;
+    }
+    &_name {
+      color: $c-default;
+      font-size: $fs-text;
+    }
+    &_img {
+      margin-top: 20px;
+    }
+    &_image {
+      max-width: 200px;
+      margin-top: 15px;
+    }
+  }
+}
+
+.aboute_us {
+  margin: auto;
+  display: flex;
+  max-width: 1440px;
+  @media screen and (max-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $desktop) {
+      margin-top: 20px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  &__img {
+    max-width: 85px;
+    max-height: 85px;
+    margin-right: 20px;
+    @media screen and (max-width: $phone) {
+      max-width: 55px;
+      max-height: 55px;
+      margin-right: 10px;
+    }
+  }
+  &__data {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    color: $c-default;
+    font-size: $fs-subtitle;
+    @media screen and (max-width: $phone) {
+      color: $c-default;
+      font-size: $fs-button;
+    }
+  }
+  &__text {
+    color: $c-default;
+    font-size: $fs-text;
+    @media screen and (max-width: $phone) {
+      color: $c-default;
+      font-size: $fs-base;
+    }
+  }
+}
