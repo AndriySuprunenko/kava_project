@@ -2,15 +2,23 @@
 $c-black: #000;
 $c-white: #fff;
 $c-default: #000;
-$c-gold: #E1B168;
-$c-space: #5C6168;
+$c-gold: #e1b168;
+$c-space: #5c6168;
 $c-silver: #555555;
-$c-home-bc: #FFF8F5;
+$c-home-bc: #fff8f5;
 $c-slider: #343942;
+$c-yellow: rgb(244, 244, 5);
 
+$c-white-transparent: rgba($c-white, 0.5);
+$c-default-transparent: rgba($c-default, 0.5);
+$c-gold-transparent: rgba($c-gold, 0.5);
+$c-space-transparent: rgba($c-space, 0.5);
+$c-silver-transparent: rgba($c-silver, 0.5);
+$c-home-bc-transparent: rgba($c-home-bc, 0.5);
+$c-slider-transparent: rgba($c-slider, 0.5);
 
 // * Font
-$f-base: "Josefin Sans";
+$f-base: 'Josefin Sans';
 
 // * Font size
 $fs-menu: 15px;

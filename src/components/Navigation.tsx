@@ -14,9 +14,9 @@ const Navigation = () => {
   });
 
   /* Method that will fix header after a specific scrollable */
-  const isSticky = (e: object) => {
+  const isSticky = (e: any) => {
     const header = document.querySelector(
-      '.header-section'
+      '.header_section'
     ) as HTMLCanvasElement;
     const banner = document.querySelector('#sec-1') as HTMLCanvasElement;
     const scrollTop = window.scrollY;
@@ -29,7 +29,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="header-section">
+    <nav className='header_section'>
       <div className="nav_container">
         <div className="nav_block">
           {/* Nav */}
