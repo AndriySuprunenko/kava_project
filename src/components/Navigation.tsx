@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
+import Burger from '../elements/Burger';
 import '../styles/components/navigations.scss';
 import '../styles/elements/link.scss';
 const Instagram = require('../assets/images/instagram.png');
-// import Burger from './Burger';
 
 const Navigation = () => {
   // Sticky Menu Area
@@ -14,7 +14,7 @@ const Navigation = () => {
   });
 
   /* Method that will fix header after a specific scrollable */
-  const isSticky = (e: any) => {
+  const isSticky = (e: object) => {
     const header = document.querySelector(
       '.header-section'
     ) as HTMLCanvasElement;
@@ -53,7 +53,9 @@ const Navigation = () => {
           {/* Icons */}
           <div className="icons">
             <div className="icon">
-              <img src={Instagram} alt="intagramm" />
+              <a href="https://www.instagram.com/kava_s_molokom_2022/?igshid=YmMyMTA2M2Y%3D">
+                <img src={Instagram} alt="intagramm" />
+              </a>
             </div>
             <div className="numbers">
               <a href="tel:+380984956069" className="link">
@@ -62,7 +64,9 @@ const Navigation = () => {
             </div>
           </div>
           {/* Burger */}
-          <div className="burger">{/* <Burger></Burger> */}</div>
+          <div className="burger">
+            <Burger />
+          </div>
         </div>
       </div>
     </nav>

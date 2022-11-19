@@ -1,0 +1,16 @@
+@import '../variables';
+
+.menu__link {
+  display: flex;
+  padding: 40px 20px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.link-block {
+  display: flex;
+  justify-content: center;
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
