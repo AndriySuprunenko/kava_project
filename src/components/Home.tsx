@@ -1,10 +1,11 @@
 // Imports
 // import styles from './home.module.scss';
+// import Maps from '../elements/Maps';
 import '../styles/components/home.scss';
 const Locale = require('../assets/images/locale.png');
 const Time = require('../assets/images/time.png');
 const Reservation = require('../assets/images/reservation.png');
-const Cart = require('../assets/images/cart-1.png');
+// const Cart = require('../assets/images/cart-1.png');
 const Signature = require('../assets/images/signature.png');
 
 const Home = () => {
@@ -49,7 +50,9 @@ const Home = () => {
       {/* Home Block */}
       <div className="home__block">
         <div className="home__image">
-          <img src={Cart} alt="cart" />
+          {/* <Maps /> */}
+          {/* Map */}
+
         </div>
         <div className="home__texts">
           <div className="home__texts_title">The Delicious Story</div>
