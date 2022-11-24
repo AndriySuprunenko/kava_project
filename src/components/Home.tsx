@@ -1,6 +1,6 @@
 // Imports
 // import styles from './home.module.scss';
-// import Maps from '../elements/Maps';
+// import initMap from '../elements/Maps';
 import '../styles/components/home.scss';
 const Locale = require('../assets/images/locale.png');
 const Time = require('../assets/images/time.png');
@@ -49,11 +49,7 @@ const Home = () => {
 
       {/* Home Block */}
       <div className="home__block">
-        <div className="home__image">
-          {/* <Maps /> */}
-          {/* Map */}
-
-        </div>
+        <div className="home__image">{/* <initMap /> */}</div>
         <div className="home__texts">
           <div className="home__texts_title">The Delicious Story</div>
           <div className="home__texts_text">
